@@ -23,8 +23,6 @@ class HomeModel : BaseModel {
     
     func getHomeData(success: SuccessClosure?, failure: FailureClosure?) {
         
-        //let parameters: [String: Any] = [:]
-//        let request = RequestConfiguraton(withRequestMethod: .get, endpoint: Endpoint.user.homeData.path, encoding: JSONEncoding.default, model: self, bodyParameters: parameters, connectionMandatory: true, headerMandatory: true)
         
         let request = RequestConfiguraton(withRequestMethod: .get, endpoint: Endpoint.user.homeData.path, encoding: JSONEncoding.default, model: self)
         self.startApiRequest(withRequestConfiguration: request, success: success, failure: failure)

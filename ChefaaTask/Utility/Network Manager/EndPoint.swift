@@ -14,8 +14,8 @@ struct Endpoint {
     enum user {
         case homeData
     }
+    
 }
-
 extension Endpoint.user {
     var path: String {
         var endpoint = ""
@@ -28,6 +28,7 @@ extension Endpoint.user {
         return endpoint
     }
 }
+
 
 
 

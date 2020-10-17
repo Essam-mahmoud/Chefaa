@@ -1,11 +1,12 @@
 //
-//  ImageHelper.swift
-//  Mabiatak
+//  SetImageWithPlaceholder.swift
+//  edura
 //
-//  Created by ahmed ezz on 8/16/19.
+//  Created by Smart Zone on 7/19/20.
+//  Copyright © 2020 Smart zone. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import Kingfisher
 class SetImageWithPlaceholder{
     class func setImage(_ string: String,placeholder:String,myImage:UIImageView) {

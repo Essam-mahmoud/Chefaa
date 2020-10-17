@@ -11,16 +11,15 @@ import UIKit
 struct Constant {
 
     static let mainDomain =  "https://test.eldev.tech/"
-    static let api = mainDomain + "api/store/home-page"
 
     
     static func getHeader(accessToken: String = "")-> [String:String] {
         var headers = ["":""]
-        
+
         if accessToken == "" {
-            headers = ["Content-Type": "application/json","lang": "en"]
+            headers = ["Content-Type": "application/json","Lang": "en"]
         }else{
-            headers = ["Content-Type": "application/json","lang": "en"]
+            headers = ["Content-Type": "application/json","Lang": "en"]
         }
         
         return headers
